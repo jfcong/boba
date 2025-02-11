@@ -35,7 +35,7 @@ function App() {
           />
           <button onClick={addItem}>Add Item</button>
         </div>
-        <ul>
+        <ul className='row-list'>
             {items.map((item, index) => (
                 <li key={index}>{item}</li>
             ))}
