@@ -1,7 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
 
 function App() {
+  const [inputText, setInputText] = useState('');
+  const [items, setItems] = useState([]);
+
+  const handleInputChange = (event) => {
+    setInputText(event.target.value);
+  };
+
+  const addItem = () => {
+    setItems([...items, inputText]);
+    setInputText('');
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +31,13 @@ function App() {
           Learn React
         </a>
       </header>
+      <input type="text" value={inputText} onChange={handleInputChange}  />
+      <button onClick={addItem}>Add</button>
+      <ul>
+        {items.map((item) => (
+          <li>{item}</li>
+        ))}
+      </ul>
     </div>
   );
 }
