@@ -13,6 +13,35 @@
   }
 }
 
+.input-display-area {
+  margin-top: 20px;
+  width: 300px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  color: black;
+}
+
+.input-display-area li {
+    list-style-type: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.App-header input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.App-header button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
